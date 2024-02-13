@@ -1,6 +1,6 @@
 
 function showDebugData = showDebugData 
 
-showDebugData = 0;
+showDebugData = 1;
 
 end 

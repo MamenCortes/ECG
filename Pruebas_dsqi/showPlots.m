@@ -1,6 +1,6 @@
 
 function showPlots = showPlots 
 
-showPlots = 0;
+showPlots = 1;
 
 end 
