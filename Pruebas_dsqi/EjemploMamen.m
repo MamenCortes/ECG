@@ -1,5 +1,6 @@
-files = {'Camiseta\Prototipo_Day1_2024-02-01_11-20-02.txt', 'Camiseta\Prototipo_Day2_2024-02-07_09-59-58.txt'};
-time = 1:(5*60)*1000;
+%files = {'Camiseta\Prototipo_Day1_2024-02-01_11-20-02.txt', 'Camiseta\Prototipo_Day2_2024-02-07_09-59-58.txt'};
+files = {'Top\02_pruebatop_s_2024-03-03_21-28-19.txt', 'Top\02_pruebatop_s_2024-03-03_21-28-19.txt'};
+time = 1:(5*60)*100; %tiempo en milisegundos = 30 segundos
 
 ecg1 =ImportPluxData(files{1}, 3);
 ecg1 = ecg1(time);
@@ -16,3 +17,5 @@ fprintf("Average mean of windows of %s: %f\n", files{1}, averageGeometricMean_20
 histogram(geometricMean_V_19, 20); 
 figure
 histogram(geometricMean_V_20, 20)
+
+
