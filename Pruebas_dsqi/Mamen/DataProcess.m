@@ -14,9 +14,9 @@ end
 
 %Variables iniciales que definen los archivos txt y el tiempo que se tomará
 %de muestra de los archivos. 
-files_M = {'Top\M\M_DIA1_2024-05-14_07-45-49.txt', 'Top\M\M_DIA2_2024-05-21_08-17-33', 'Top\M\M_DIA3_2024-05-24_09-58-13', 'Top\M\M_DIA4_2024-06-02_09-08-18'};
-files_S = {'Top\S\S_DIA1_2024-05-17_09-57-48.txt', 'Top\S\S_DIA2_2024-05-22_07-30-33', 'Top\S\S_DIA3_2024-05-25_09-31-38', 'Top\S\S_DIA4_2024-06-03_09-38-01'}; 
-files_L = {'Top\L\L_DIA1_2024-05-16_10-03-55.txt', 'Top\L\L_DIA2_2024-05-20_09-58-30', 'Top\L\L_DIA3_2024-05-30_10-29-44', 'Top\L\L_DIA4_2024-06-07_12-49-23'};
+files_M = {'Top\M\M_DIA1_2024-05-14_07-45-49.txt', 'Top\M\M_DIA2_2024-05-21_08-17-33.txt', 'Top\M\M_DIA3_2024-05-24_09-58-13.txt', 'Top\M\M_DIA4_2024-06-02_09-08-18.txt'};
+files_S = {'Top\S\S_DIA1_2024-05-17_09-57-48.txt', 'Top\S\S_DIA2_2024-05-22_07-30-33.txt', 'Top\S\S_DIA3_2024-05-25_09-31-38.txt', 'Top\S\S_DIA4_2024-06-03_09-38-01.txt'}; 
+files_L = {'Top\L\L_DIA1_2024-05-16_10-03-55.txt', 'Top\L\L_DIA2_2024-05-20_09-58-30.txt', 'Top\L\L_DIA3_2024-05-30_10-29-44.txt', 'Top\L\L_DIA4_2024-06-07_12-49-23.txt'};
 
 fileSets = {files_S, files_M, files_L}; 
 indexes = cell(1, length(fileSets)); % vector de 3 posiciones
