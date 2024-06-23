@@ -25,7 +25,10 @@ for file_index = 1:numel(files_pruebaCortas_OpenSignal)
     data = readmatrix(file_path);
 
     ecg_opensignal = data(:, 3);% opensignal
-    
+    ecg_opensignal = ImportPluxData(file_path,3);
+    %ecg = data(time_vector);
+    %[kSQI_01_vector, sSQI_01_vector, pSQI_01_vector, rel_powerLine01_vector, cSQI_01_vector, basSQI_01_vector, dSQI_01_vector, geometricMean_vector, averageGeometricMean] = mSQI(ecg, 1000);
+
     n = length(ecg_opensignal);
     indexes_escaleras = cell(1,n);
 
@@ -43,8 +46,8 @@ for file_index = 1:numel(files_pruebaCortas_OpenSignal)
     % Escribir la tabla en el archivo CSV
     writetable(geometricMean_table, nombre_archivo);
     
-     % Guardar el nombre del archivo en el array
-        mSQI_archivos_generados{file_index} = nombre_archivo;
+    % Guardar el nombre del archivo en el array
+    mSQI_archivos_generados{file_index} = nombre_archivo;
 end
 
 % Guardar el array de nombres de archivos generados
